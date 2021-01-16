@@ -1,0 +1,50 @@
+{
+	"name": "react-slider-responsive",
+	"version": "1.0.0",
+	"description": "Carousel React Component",
+	"main": "./build/index.js",
+	"scripts": {
+		"build": "webpack"
+	},
+	"keywords": [
+		"react",
+		"carousel",
+		"image-gallery",
+		"slider",
+		"responsive",
+		"swipe",
+		"react-component"
+	],
+	"author": " <andrei.klimovich84@gmail.com>",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.12.10",
+		"@babel/plugin-proposal-class-properties": "^7.12.1",
+		"@babel/preset-env": "^7.12.11",
+		"@babel/preset-react": "^7.12.10",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.2.2",
+		"css-loader": "^5.0.1",
+		"eslint": "^7.17.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"file-loader": "^6.2.0",
+		"mini-css-extract-plugin": "^1.3.3",
+		"node-sass": "^5.0.0",
+		"prettier": "^2.2.1",
+		"react": "^17.0.1",
+		"style-loader": "^2.0.0",
+		"webpack": "^5.11.0",
+		"webpack-cli": "^4.2.0",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"dependencies": {
+		"prop-types": "^15.7.2",
+		"radium": "^0.26.1"
+	}
+}

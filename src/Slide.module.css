@@ -1,0 +1,9 @@
+.item > div {
+	width: 100%;
+	flex-grow: 1;
+	
+}
+.item > div > img {
+	display: block;
+	width: 100%;
+}
