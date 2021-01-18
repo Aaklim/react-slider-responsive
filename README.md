@@ -43,9 +43,9 @@ const Demo = () => (
 
 ReactDOM.render(<Demo />, document.getElementById('root'))
 ```
-Each slide content must be wrapped in <div>.
+Each slide content must be wrapped in `<div>`.
 Each direct `<div>` child represent one slide.
-In multiply mode , multiply={2} each slide consist of two `<div>` childs:
+In multiply mode , multiply={2} each slide consist of two `<div>` childs in row:
 ```javascript
 
 const Demo = () => (
@@ -69,8 +69,37 @@ const Demo = () => (
   </Carousel>
 )
 ```
-### Demo
+You can create slide with custom number of  childs, for example:
+```javascript
 
+const Demo = () => (
+  <Carousel multiply={2} >
+
+    <div>
+      <img src="img/img1.jpg" alt="test-slide" />
+      <img src="img/img2.jpg" alt="test-slide" />
+    </div>
+    <div>
+      <img src="img/img3.jpg" alt="test-slide" />
+      <img src="img/img4.jpg" alt="test-slide" />
+    </div>
+
+
+    <div>
+      <img src="img/img5.jpg" alt="test-slide" />
+      <img src="img/img6.jpg" alt="test-slide" />
+    </div>
+    <div>
+      <img src="img/img7.jpg" alt="test-slide" />
+      <img src="img/img8.jpg" alt="test-slide" />
+    </div>
+
+  </Carousel>
+)
+```
+With prop multiply=2 and two images in root `<div>` you get one slide from 4 items , two rows of two items...
+### Demo
+https://aaklim.github.io/demo-react-slider-responsive/
 ### Props
 
 - `autoplay` {number} : Autoplay mode is disabled by default .Adding prop `autoplay` to the `Carousel` component activates it with a default interval of 2000 ms.If you want to change interval , set value:number(ms)  to `autoplay={number}` prop .Autoplay mode will be active until the slide is changed manually.

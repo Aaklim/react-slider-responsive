@@ -88,7 +88,11 @@ const Carousel = ({
       }
       return itemsArr
     }
-    return [currentItems]
+    const item = []
+    item.push({ ...currentItems })
+    item.id = 1
+
+    return [item]
   }
   const createCopyElement = (element) => {
     const copyElement = [...element]
@@ -101,8 +105,12 @@ const Carousel = ({
       extendArr.push(createCopyElement(initialArr[0]))
       extendArr.unshift(createCopyElement(initialArr[initialArr.length - 1]))
     } else {
-      extendArr.push(createCopyElement(initialArr[0]))
-      extendArr.unshift(createCopyElement(initialArr[0]))
+      const copyElementBefore = createCopyElement(initialArr[0])
+      copyElementBefore.id = 0
+      const copyElementAfter = createCopyElement(initialArr[0])
+      copyElementAfter.id = 2
+      extendArr.push(copyElementAfter)
+      extendArr.unshift(copyElementBefore)
     }
     const itemsArr = extendArr.map((item, index) => (
       <Slide
